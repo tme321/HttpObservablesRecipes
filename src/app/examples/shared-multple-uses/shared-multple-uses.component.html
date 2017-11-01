@@ -1,0 +1,12 @@
+<div>
+    <h2>Multiple Uses Example</h2>
+    <span>Now safely get the count {{(dataCount$ | async)}} without causing another network request.</span><br>
+    <ul>
+      <!-- let the async pipe do the subscribing for us -->
+      <li *ngFor="let result of (data$ | async); index as i">
+        <label>Result {{i}}:</label>
+        <span>{{result.field}}</span>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,11 @@
+<div>
+  <h2>Routing Data Example</h2>
+  <ul>
+    <!-- let the async pipe do the subscribing for us -->
+    <li *ngFor="let result of (data$ | async); index as i">
+      <label>Result {{i}}:</label>
+      <span>{{result.field}}</span>
+    </li>
+  </ul>
+</div>
+  

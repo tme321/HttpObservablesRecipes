@@ -1,20 +1,29 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
   <h1>
-    Welcome to {{title}}!
+    Http Observables Recipes
   </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
-
+<div class="ex-container">
+  <div class="categories">
+    <ul>
+      <li><a routerLink="/controllerSubscribing">Controller Subscribing</a></li>
+      <li><a routerLink="/asyncPipe">Async Pipe</a></li>
+      <li><a routerLink="/multipleUses">Multiple Uses</a></li>
+      <li><a routerLink="/sharedMultipleUses">Shared Multiple Uses</a></li>
+      <li><a routerLink="/pipelineRequests">Pipeline Requests</a></li>
+      <li><a routerLink="/routingData">Routing Data</a></li>
+      <li><a routerLink="/ngrxSimple">Ngrx Simple</a></li>
+      <li><a routerLink="/ngrxEffects">Ngrx Effects</a></li>
+    </ul>
+  </div>
+  <div class="examples">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+<!--
+<app-controller-subscribing></app-controller-subscribing>
+<app-async-pipe-subscribing></app-async-pipe-subscribing>
+<app-multiple-uses-subscribing></app-multiple-uses-subscribing>
+<app-shared-multple-uses-subscriber></app-shared-multple-uses-subscriber>
+<app-pipeline-requests-subscriber></app-pipeline-requests-subscriber>
+-->

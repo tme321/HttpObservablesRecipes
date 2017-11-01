@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('observables-demo App', () => {
+describe('http-observables-recipes App', () => {
   let page: AppPage;
 
   beforeEach(() => {

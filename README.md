@@ -1,4 +1,8 @@
-# ObservablesDemo
+# HttpObservablesRecipes
+
+A group of simple examples showing how to work with 
+the angular http client library and observables and
+binding that data to templates.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.1.
 

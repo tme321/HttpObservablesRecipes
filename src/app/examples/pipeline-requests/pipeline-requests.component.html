@@ -1,0 +1,16 @@
+<div>
+  <h2>Pipeline Example</h2>
+  <div>
+    <span>Data refresh count: {{refreshCount$ | async}}</span>
+    <button (click)="getDataAgain()">Get Data</button>
+  </div>
+  <span>Count: {{(dataCount$ | async)}}</span><br>
+  <ul>
+    <!-- let the async pipe do the subscribing for us -->
+    <li *ngFor="let result of (data$ | async); index as i">
+      <label>Result {{i}}:</label>
+      <span>{{result.field}}</span>
+    </li>
+  </ul>
+</div>
+  

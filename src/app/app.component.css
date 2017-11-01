@@ -1,0 +1,10 @@
+div.ex-container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+div.categories,
+div.examples {
+    width:50%;
+}

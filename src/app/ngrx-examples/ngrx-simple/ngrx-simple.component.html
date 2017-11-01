@@ -1,0 +1,14 @@
+<div>
+    <h2>Ngrx Simple Example</h2>
+    <div>
+      <button (click)="getData()">Get Data</button>
+    </div>
+    <ul>
+      <!-- let the async pipe do the subscribing for us -->
+      <li *ngFor="let result of (data$ | async); index as i">
+        <label>Result {{i}}:</label>
+        <span>{{result.field}}</span>
+      </li>
+    </ul>
+  </div>
+  
